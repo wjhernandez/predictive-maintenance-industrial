@@ -10,7 +10,7 @@
 
 ## Contexto de Negocio
 
-En industrias de proceso continuo —papel, pulpa, química, alimentos— los equipos rotativos representan activos críticos cuya falla no planificada genera paros de producción, costos de mantenimiento correctivo hasta 5 veces superiores al preventivo, y riesgos operacionales. Bajo la filosofía **TPM (Total Productive Maintenance)**, el pilar de Mantenimiento Planificado busca transitar del mantenimiento reactivo al predictivo mediante análisis de datos de sensores en tiempo real.
+En industrias de proceso continuo como papel, pulpa, química, alimentos, entre otros, los equipos rotativos representan activos críticos cuya falla no planificada genera paros de producción, costos de mantenimiento correctivo hasta 5 veces superiores al preventivo, y riesgos operacionales. Bajo la filosofía **TPM (Total Productive Maintenance)**, el pilar de Mantenimiento Planificado busca transitar del mantenimiento reactivo al predictivo mediante análisis de datos de sensores en tiempo real.
 
 **Pregunta de negocio:**
 > ¿Es posible predecir la falla de un equipo industrial con base en variables de proceso medibles en tiempo real, y clasificar el tipo de falla para orientar la acción de mantenimiento?
@@ -65,26 +65,6 @@ Exportación CSV → Power BI Dashboard
 - **SMOTE aplicado únicamente en train** para evitar data leakage
 - **Variables derivadas con fundamento físico:** P = T × ω (potencia mecánica), ΔT = T_proceso − T_aire, Índice sobresfuerzo = Torque × Desgaste
 - **SHAP para interpretabilidad**: el equipo de mantenimiento necesita saber *por qué* el modelo predice una falla, no solo *que* la predice
-
----
-
-## Resultados
-
-| Modelo | ROC-AUC | PR-AUC | Recall (falla) | Precision (falla) |
-|---|---|---|---|---|
-| Logistic Regression | — | — | — | — |
-| Random Forest | — | — | — | — |
-| **XGBoost** | — | — | — | — |
-
-*Los valores se completan al ejecutar el notebook con el dataset real.*
-
-### KPIs de Confiabilidad por Tipo de Producto
-
-| Tipo | MTBF (horas) | Tasa de Falla (%) | Disponibilidad (%) |
-|---|---|---|---|
-| H (Alta calidad) | — | — | — |
-| M (Media calidad) | — | — | — |
-| L (Baja calidad) | — | — | — |
 
 ---
 

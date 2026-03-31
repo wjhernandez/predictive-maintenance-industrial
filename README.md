@@ -35,30 +35,6 @@ El AI4I 2020 Predictive Maintenance Dataset es un conjunto de datos sintético q
 - 10,000 registros · 14 variables · Desbalance 96.6% normal / 3.4% falla
 - Licencia: Creative Commons Attribution 4.0 (CC BY 4.0)
 
----
-
-## Metodología
-
-```
-Carga de datos (UCI API)
-    ↓
-EDA — Distribuciones, correlaciones, análisis por modo de falla
-    ↓
-Feature Engineering — Delta_T, Potencia mecánica, Overstrain index
-    ↓
-Preprocesamiento — Escalado, SMOTE (solo en train)
-    ↓
-Modelado — Regresión Logística, Random Forest, XGBoost
-    ↓
-Evaluación — PR-AUC, Recall (métrica primaria), Matrices de confusión
-    ↓
-Interpretabilidad — SHAP values (importancia por variable)
-    ↓
-KPIs — MTBF, Disponibilidad operacional por tipo de producto
-    ↓
-Exportación CSV → Power BI Dashboard
-```
-
 ### Decisiones de diseño
 
 - **Métrica primaria: Recall** — el costo de una falla no detectada (falso negativo) en planta es órdenes de magnitud mayor que el costo de una inspección innecesaria

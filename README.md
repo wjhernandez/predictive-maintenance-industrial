@@ -141,10 +141,10 @@ El dashboard está diseñado como modelo estrella con las siguientes páginas:
 
 Este análisis es aplicable directamente a:
 
-- **Industria papelera/pulpa:** Monitoreo de refinadores, bombas, compresores de aire
-- **Manufactura de consumo:** Líneas de producción continua tipo Kimberly-Clark, Smurfit Kappa
-- **Agroindustria:** Equipos de procesamiento en ingenios azucareros, plantas de aceite
-- **Química industrial:** Torres de destilación, reactores, intercambiadores de calor
+- **Industria papelera/pulpa:** Monitoreo de refinadores, bombas, compresores de aire.
+- **Manufactura de consumo:** Líneas de producción continua.
+- **Agroindustria:** Equipos de procesamiento en ingenios azucareros, plantas de aceite.
+- **Química industrial:** Torres de destilación, reactores, intercambiadores de calor.
 
 ---
 
